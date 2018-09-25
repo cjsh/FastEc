@@ -6,13 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+  <com.joanzapata.iconify.widget.IconTextView
+      android:id="@+id/icon_test"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="{fa-cc-visa}"/>
+
+  <com.joanzapata.iconify.widget.IconTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:shadowColor="#22000000"
+      android:shadowDx="0"
+      android:shadowDy="5"
+      android:shadowRadius="1"
+      android:text="Welcome {fa-smile-o} {fa-hand-peace-o} !"
+      android:textColor="#2A9BDA"
+      android:textSize="30sp" />
 
 </android.support.constraint.ConstraintLayout>

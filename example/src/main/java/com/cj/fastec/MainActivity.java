@@ -1,13 +1,16 @@
 package com.cj.fastec;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.cj.core.activitys.ProxyActivity;
+import com.cj.core.dalegates.LatteDelegate;
+
+public class MainActivity extends ProxyActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public LatteDelegate setRootDelegate() {
+        return new MainDelegate();
     }
+
 }
